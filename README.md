@@ -3,7 +3,7 @@ It has been deployed at the url
 https://makeshiftreddit.herokuapp.com
 All endpoints are demoed in the postman collection file
 
-The following endpoints were created
+# API Documentation
 ---
 
 POST  /api/registeruser (Allows user to register an account with a unique username and a password)
