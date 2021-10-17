@@ -6,7 +6,7 @@ All endpoints are demoed in the postman collection file
 # API Documentation
 ---
 
-POST  /api/registeruser 
+## POST  /api/registeruser 
 
 (Allows user to register an account with a unique username and a password)
 
@@ -20,7 +20,7 @@ All user passwords will be hashed with bcrypt
 
 ---
 
-POST  /api/retrievetoken 
+## POST  /api/retrievetoken 
 
 (Allows user to retrieve api key/token to make authenticated requests with)
 
@@ -32,7 +32,7 @@ Reponse:access token
 
 ---
 
-POST  /api/addpost 
+## POST  /api/addpost 
 
 (Allows user to add a post to their account)
 
@@ -46,7 +46,7 @@ post_content(required)
   
 ---
   
-POST  /api/deletepost 
+## POST  /api/deletepost 
   
 (Allows user to delete a post from their account)
   
@@ -60,7 +60,7 @@ post_id(required)
   
 ---
   
-POST  /api/updatepost 
+## POST  /api/updatepost 
   
 (Allows user to update a post from their account with new content)
   
@@ -76,7 +76,7 @@ newcontent(required)
   
 ---
   
-POST /api/<post id>/comment 
+## POST /api/<post id>/comment 
   
 (Allows user to comment on a specific post)
   
@@ -86,7 +86,7 @@ comment_content(required)
   
 ---
   
-POST /api/comment/<comment_id>/(downvote|update)   
+## POST /api/comment/<comment_id>/(downvote|update)   
   
 (Allows user to upvote/downvote a comment)
   
@@ -96,7 +96,7 @@ Authorization:Bearer <token>(required)
   
 ---
   
-POST /api/<post_id>/(downvote|upvote)    
+## POST /api/<post_id>/(downvote|upvote)    
 
 (Allows user to upvote/downvote a post)
   
@@ -112,7 +112,7 @@ GET  /api/post/<post id>
   
 ---
   
-GET  /api/posts/ 
+## GET  /api/posts/ 
   
 (Allows user to view all the details of posts created under their account including its comments and also number of downvotes/upvotes)
   
@@ -121,7 +121,10 @@ Header
 Authorization:Bearer <token>(required)
   
 ---
-GET  /api/posts/<username> ( (Allows user to view all the details of an individual users posts including its comments and also number of downvotes/upvotes)
+
+## GET  /api/posts/<username> 
+
+(Allows user to view all the details of an individual users posts including its comments and also number of downvotes/upvotes)
 
 
 
