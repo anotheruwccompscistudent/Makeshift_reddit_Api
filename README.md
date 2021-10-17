@@ -40,7 +40,7 @@ Reponse:access token
 
 ### Header
 
-Authorization:Bearer <token>(required)
+Authorization:Bearer token (required)
 
 ### Payload/Data
   
@@ -54,7 +54,7 @@ post_content(required)
   
 ### Header
   
-Authorization:Bearer <token>(required)
+Authorization:Bearer token(required)
 
 ### Payload/Data
   
@@ -68,7 +68,7 @@ post_id(required)
   
 ### Header
   
-Authorization:Bearer <token>(required)
+Authorization:Bearer token(required)
 
 ### Payload/Data
   
@@ -84,7 +84,7 @@ newcontent(required)
   
 ### Header
   
-Authorization:Bearer <token>(required)
+Authorization:Bearer token(required)
   
 ### payload/data
   
@@ -98,7 +98,7 @@ comment_content(required)
   
 ### Header
   
-Authorization:Bearer <token>(required)
+Authorization:Bearer token(required)
   
 ---
   
@@ -108,7 +108,7 @@ Authorization:Bearer <token>(required)
   
 ### Header
   
-Authorization:Bearer <token>(required)
+Authorization:Bearer token(required)
   
 ---
   
@@ -124,7 +124,7 @@ Authorization:Bearer <token>(required)
   
 ### Header
   
-Authorization:Bearer <token>(required)
+Authorization:Bearer token (required)
   
 ---
 
