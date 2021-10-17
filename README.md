@@ -10,7 +10,7 @@ All endpoints are demoed in the postman collection file
 
 (Allows user to register an account with a unique username and a password)
 
-Payload/Data
+### Payload/Data
 
 username(required)
 
@@ -24,8 +24,10 @@ All user passwords will be hashed with bcrypt
 
 (Allows user to retrieve api key/token to make authenticated requests with)
 
-Payload/Data
+### Payload/Data
+
 username(required)
+
 password(required)
 
 Reponse:access token
@@ -36,11 +38,11 @@ Reponse:access token
 
 (Allows user to add a post to their account)
 
-Header
+### Header
 
 Authorization:Bearer <token>(required)
 
-Payload/Data
+### Payload/Data
   
 post_content(required)
   
@@ -50,11 +52,11 @@ post_content(required)
   
 (Allows user to delete a post from their account)
   
-Header
+### Header
   
 Authorization:Bearer <token>(required)
 
-Payload/Data
+### Payload/Data
   
 post_id(required)
   
@@ -64,11 +66,11 @@ post_id(required)
   
 (Allows user to update a post from their account with new content)
   
-Header
+### Header
   
 Authorization:Bearer <token>(required)
 
-Payload/Data
+### Payload/Data
   
 post_id(required)
   
@@ -80,7 +82,11 @@ newcontent(required)
   
 (Allows user to comment on a specific post)
   
-payload/data
+### Header
+  
+Authorization:Bearer <token>(required)
+  
+### payload/data
   
 comment_content(required)
   
@@ -90,7 +96,7 @@ comment_content(required)
   
 (Allows user to upvote/downvote a comment)
   
-Header
+### Header
   
 Authorization:Bearer <token>(required)
   
@@ -100,7 +106,7 @@ Authorization:Bearer <token>(required)
 
 (Allows user to upvote/downvote a post)
   
-Header
+### Header
   
 Authorization:Bearer <token>(required)
   
@@ -116,7 +122,7 @@ GET  /api/post/<post id>
   
 (Allows user to view all the details of posts created under their account including its comments and also number of downvotes/upvotes)
   
-Header
+### Header
   
 Authorization:Bearer <token>(required)
   
