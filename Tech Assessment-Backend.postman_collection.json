@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "dbcbf7a7-244b-4b35-ace7-22edae2351a8",
+		"name": "Tech Assessment-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "defaultuser2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "defaultpass2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/registeruser",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"registeruser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "defaultuser2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "defaultpass2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/retrievetoken",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"retrievetoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addpost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "post_content",
+							"value": "HELLO,MR POSTMAN 3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/addpost",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"addpost"
+					]
+				},
+				"description": "Add a post"
+			},
+			"response": []
+		},
+		{
+			"name": "deletepost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "post_id",
+							"value": "616c094fbedabf000470f3a0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/deletepost",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"deletepost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "post_id",
+							"value": "616c0940bedabf000470f39d",
+							"type": "text"
+						},
+						{
+							"key": "newcontent",
+							"value": "Edited Post Number 3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/update",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts for user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/posts/defaultuser1",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						"defaultuser1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/posts/",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view individual post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/post/616c0940bedabf000470f39d",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"616c0940bedabf000470f39d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment on post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "comment_content",
+							"value": "Comment 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/616c0940bedabf000470f39d/comment",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"616c0940bedabf000470f39d",
+						"comment"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downvote/upvote comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/comment/616c38b5c273420004fe7151/downvote",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"comment",
+						"616c38b5c273420004fe7151",
+						"downvote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downvote upvote post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://makeshiftreddit.herokuapp.com/api/616c0940bedabf000470f39d/downvote",
+					"protocol": "https",
+					"host": [
+						"makeshiftreddit",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"616c0940bedabf000470f39d",
+						"downvote"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
