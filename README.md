@@ -112,7 +112,7 @@ Authorization:Bearer <token>(required)
   
 ---
   
-GET  /api/post/<post id> 
+## GET  /api/post/<post id> 
   
 (Allows user to view all the details of an individual post including its comments and also number of downvotes/upvotes)
   
