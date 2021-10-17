@@ -78,7 +78,7 @@ newcontent(required)
   
 ---
   
-## POST /api/<post id>/comment 
+## POST /api/post_id/comment 
   
 (Allows user to comment on a specific post)
   
@@ -92,7 +92,7 @@ comment_content(required)
   
 ---
   
-## POST /api/comment/<comment_id>/(downvote|update)   
+## POST /api/comment/comment_id/(downvote|update)   
   
 (Allows user to upvote/downvote a comment)
   
@@ -102,7 +102,7 @@ Authorization:Bearer <token>(required)
   
 ---
   
-## POST /api/<post_id>/(downvote|upvote)    
+## POST /api/post_id/(downvote|upvote)    
 
 (Allows user to upvote/downvote a post)
   
@@ -112,7 +112,7 @@ Authorization:Bearer <token>(required)
   
 ---
   
-## GET  /api/post/<post id> 
+## GET  /api/post/post_id
   
 (Allows user to view all the details of an individual post including its comments and also number of downvotes/upvotes)
   
