@@ -7,14 +7,17 @@ All endpoints are demoed in the postman collection file
 ---
 
 POST  /api/registeruser (Allows user to register an account with a unique username and a password)
+
 Payload/Data
 username(required)
 password(required)
+
 All user passwords will be hashed with bcrypt
 
 ---
 
 POST  /api/retrievetoken (Allows user to retrieve api key/token to make authenticated requests with)
+
 Payload/Data
 username(required)
 password(required)
@@ -42,6 +45,7 @@ post_id(required)
 ---
   
 POST  /api/updatepost (Allows user to update a post from their account with new content)
+  
 Header
 Authorization:Bearer <token>(required)
 
@@ -52,18 +56,21 @@ newcontent(required)
 ---
   
 POST /api/<post id>/comment (Allows user to comment on a specific post)
+  
 payload/data
 comment_content(required)
   
 ---
   
 POST /api/comment/<comment_id>/(downvote|update)   (Allows user to upvote/downvote a comment)
+  
 Header
 Authorization:Bearer <token>(required)
   
 ---
   
 POST /api/<post_id>/(downvote|upvote)    (Allows user to upvote/downvote a post)
+  
 Header
 Authorization:Bearer <token>(required)
   
@@ -74,6 +81,7 @@ GET  /api/post/<post id> ( (Allows user to view all the details of an individual
 ---
   
 GET  /api/posts/ (Allows user to view all the details of posts created under their account including its comments and also number of downvotes/upvotes)
+  
 Header
 Authorization:Bearer <token>(required)
   
