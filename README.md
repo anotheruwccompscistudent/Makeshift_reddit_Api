@@ -5,11 +5,13 @@ All endpoints are demoed in the postman collection file
 
 The following endpoints were created
 ---
+
 POST  /api/registeruser (Allows user to register an account with a unique username and a password)
 Payload/Data
 username(required)
 password(required)
 All user passwords will be hashed with bcrypt
+
 ---
 
 POST  /api/retrievetoken (Allows user to retrieve api key/token to make authenticated requests with)
@@ -18,6 +20,7 @@ username(required)
 password(required)
 
 Reponse:access token
+
 ---
 
 POST  /api/addpost (Allows user to add a post to their account)
