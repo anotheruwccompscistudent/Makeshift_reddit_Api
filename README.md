@@ -1,7 +1,7 @@
 ## How to run the api
 It has been deployed at the url 
 https://makeshiftreddit.herokuapp.com
-All endpoints are demoed in the postman collection file
+*All endpoints are described in the postman collection file*
 
 # API Documentation
 ---
